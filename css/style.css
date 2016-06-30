@@ -45,6 +45,9 @@ body {
           body header.header div.header-container nav.header-navbar div.header-container-fluid div.header-navbar-header .logo {
             margin: 6px 0 2px 0;
             display: inline-block; }
+            @media (max-width: 768px) {
+              body header.header div.header-container nav.header-navbar div.header-container-fluid div.header-navbar-header .logo {
+                margin-left: 15px; } }
             body header.header div.header-container nav.header-navbar div.header-container-fluid div.header-navbar-header .logo .modus {
               font-size: 30px;
               font-weight: bold; }
@@ -82,6 +85,16 @@ body {
               margin: 5px;
               background-color: #e5655d;
               border-radius: 4px; }
+          body header.header div.header-container nav.header-navbar div.header-container-fluid div.sidebar ul li.search ul li {
+            width: 280px; }
+          body header.header div.header-container nav.header-navbar div.header-container-fluid div.sidebar ul li.search #search-box {
+            width: 250px;
+            display: inline-block;
+            border-radius: 0; }
+          body header.header div.header-container nav.header-navbar div.header-container-fluid div.sidebar ul li.search #search-icon {
+            color: #76c7c0;
+            font-size: 16px;
+            padding-left: 10px; }
           @media (min-width: 768px) {
             body header.header div.header-container nav.header-navbar div.header-container-fluid div.sidebar ul ul.second-dropdown {
               margin-top: 10px;
@@ -250,41 +263,48 @@ body {
         body main section.section-about div.fish-eyes-carousel .slideItem-left {
           position: absolute;
           left: 0;
-          top: 20%;
-          z-index: 1;
-          -webkit-transition: 1.5s;
-          -moz-transition: 1.5s;
-          -ms-transition: 1.5s;
-          -o-transition: 1.5s;
-          transition: 1.5s; }
+          top: 10%;
+          z-index: 0;
+          -webkit-transform: translate(0, 10%);
+          -moz-transform: translate(0, 10%);
+          -ms-transform: translate(0, 10%);
+          -o-transform: translate(0, 10%);
+          transform: translate(0, 10%); }
         body main section.section-about div.fish-eyes-carousel .slideItem-right {
           position: absolute;
-          right: 0;
-          top: 20%;
-          z-index: 1;
-          -webkit-transition: 1.5s;
-          -moz-transition: 1.5s;
-          -ms-transition: 1.5s;
-          -o-transition: 1.5s;
-          transition: 1.5s; }
+          left: 100%;
+          top: 10%;
+          z-index: 0;
+          -webkit-transform: translate(-100%, 10%);
+          -moz-transform: translate(-100%, 10%);
+          -ms-transform: translate(-100%, 10%);
+          -o-transform: translate(-100%, 10%);
+          transform: translate(-100%, 10%); }
         body main section.section-about div.fish-eyes-carousel .slideItem-center {
           position: absolute;
           left: 50%;
           top: 10%;
-          z-index: 2;
+          z-index: 1;
           -webkit-transform: translate(-50%, 0);
           -moz-transform: translate(-50%, 0);
           -ms-transform: translate(-50%, 0);
           -o-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+          body main section.section-about div.fish-eyes-carousel .slideItem-center img.slide-img {
+            width: 570px;
+            height: 310px; }
+        body main section.section-about div.fish-eyes-carousel .slideItem-left, body main section.section-about div.fish-eyes-carousel .slideItem-center, body main section.section-about div.fish-eyes-carousel .slideItem-right {
           -webkit-transition: 2s;
           -moz-transition: 2s;
           -ms-transition: 2s;
           -o-transition: 2s;
           transition: 2s; }
-          body main section.section-about div.fish-eyes-carousel .slideItem-center img.slide-img {
-            width: 570px;
-            height: 310px; }
+          body main section.section-about div.fish-eyes-carousel .slideItem-left img, body main section.section-about div.fish-eyes-carousel .slideItem-center img, body main section.section-about div.fish-eyes-carousel .slideItem-right img {
+            -webkit-transition: 2s;
+            -moz-transition: 2s;
+            -ms-transition: 2s;
+            -o-transition: 2s;
+            transition: 2s; }
       body main section.section-about div.about-info div.left-info h4, body main section.section-about div.about-info div.right-info h4 {
         color: #7f8c8c; }
       body main section.section-about div.about-info div.left-info p, body main section.section-about div.about-info div.right-info p {

@@ -46,7 +46,15 @@
                         <li><a href="#">BLOG</a></li>
                         <li><a href="#">FEATURES</a></li>
                         <li><a href="#">CONTACTS</a></li>
-                        <li><a href="#"><i class="fa fa-search " aria-hidden="true"></i></a></li>
+                        <li class="dropdown search">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search " aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu search-dropdown">
+                                <li>
+                                    <input id="search-box" type="text" class="form-control">
+                                    <i id="search-icon" class="fa fa-search " aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
 
                 </div>
@@ -178,7 +186,7 @@
                     <img class="top-right-icon" src="img/top-right.png" alt="">
                     <img class="slide-img" src="img/slide-5.jpg">
                 </div>
-                <div class="slideItem slideItem-center">
+                <div class="slideItem slideItem-center active">
                     <img class="top-left-icon" src="img/top-left.png" alt="">
                     <img class="top-right-icon" src="img/top-right.png" alt="">
                     <img class="slide-img" src="img/slide-4.jpg">
