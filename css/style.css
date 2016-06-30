@@ -2171,7 +2171,11 @@ body {
           padding-left: 5px;
           font-size: 20px;
           font-style: italic;
-          font-weight: 800; }
+          font-weight: 800;
+          text-decoration: none; }
+          body footer div.container div.footer-info div.footer-left div.contact .highlight:hover {
+            text-decoration: none;
+            color: #e2534b; }
       body footer div.container div.footer-info div.footer-center {
         margin-bottom: 40px; }
         body footer div.container div.footer-info div.footer-center h4 {
@@ -2179,15 +2183,24 @@ body {
           opacity: 0.5;
           font-size: 20px; }
         body footer div.container div.footer-info div.footer-center a {
-          color: #fff; }
+          color: #fff;
+          text-decoration: none; }
           body footer div.container div.footer-info div.footer-center a i {
             font-size: 11px; }
+          body footer div.container div.footer-info div.footer-center a:hover {
+            text-decoration: none;
+            color: #e2534b; }
       body footer div.container div.footer-info div.footer-right {
         margin-bottom: 40px; }
         body footer div.container div.footer-info div.footer-right .blog {
           font-weight: bold; }
         body footer div.container div.footer-info div.footer-right div.blog-item {
           margin-bottom: 15px; }
+          body footer div.container div.footer-info div.footer-right div.blog-item a {
+            text-decoration: none; }
+            body footer div.container div.footer-info div.footer-right div.blog-item a:hover {
+              text-decoration: none;
+              color: #e2534b; }
           body footer div.container div.footer-info div.footer-right div.blog-item img {
             border-radius: 5px;
             max-height: 70px;
